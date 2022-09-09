@@ -338,3 +338,11 @@ $('.menu-bg').click(function () {
     $('.col-lg-2.py-3.bg-info.leftSidebar, .menu-bg').removeClass('active')
     $('body, html').css('overflow-y', 'scroll')
 })
+
+const needles = document.querySelectorAll('.needle');
+for (const needle of needles) {
+    // console.log($(needle).attr("data-percantage"))
+    const percentage = parseInt($(needle).attr("data-percantage"));
+    const degree = -145 + (percentage * 1.8);
+    $(needle).css('transform', 'rotate(' + degree + 'deg)')
+}

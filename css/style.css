@@ -191,6 +191,24 @@ html body .blueberryChart {
     background: #555;
 }
 
+.img-fluid.needle {
+    position: absolute;
+    bottom: -5px;
+    left: 42%;
+    transform: translateX(-20%) rotate(-145deg);
+    transform-origin: 15px 35px;
+    transition: 0.5s;
+}
+
+.value {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    right: 10px;
+    bottom: 10px;
+    color: #00b0f0;
+}
+
 @media screen and (max-width: 992px) {
     .col-lg-3.m-auto.mobile-flex {
         display: flex !important;
